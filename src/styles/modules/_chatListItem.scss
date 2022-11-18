@@ -10,6 +10,11 @@
   align-items: start;
   line-height: 1;
   border-top: 1px solid variables.$gray;
+  transition: background-color 0.15s;
+
+  &:hover {
+    background: #bbcfe8;
+  }
 
   &:last-of-type {
     border-bottom: 1px solid variables.$gray;

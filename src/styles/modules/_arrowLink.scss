@@ -1,0 +1,33 @@
+@use "../variables";
+
+.arrow-link {
+  background: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: variables.$dark-gray;
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+
+    .arrow-link--icon {
+      transform: translateX(15%);
+    }
+  }
+
+  .arrow-link--title {
+    color: inherit;
+  }
+
+  .arrow-link--icon {
+    width: 1.5em;
+    transition: transform 0.15s;
+    transform: translateX(0);
+  }
+}

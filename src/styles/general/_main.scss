@@ -1,0 +1,52 @@
+@use "../variables";
+@use "../mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+input, button {
+  border: 0;
+  outline: 0;
+}
+
+.error-template {
+  color: variables.$black;
+  text-align: center;
+  @include mixins.absolute-center;
+
+  .error-template--title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .error-template--description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    display: block;
+    margin-top: 20px;
+  }
+
+  .error-template--link {
+    display: block;
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.no-border {
+  border: 0 !important;
+}

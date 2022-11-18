@@ -56,6 +56,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+document.addEventListener("click",
+  (event) => {
+    const target = event.target;
+    const closestLink = target.closest('a');
+    const isLink = target.tagName.toLowerCase() === 'a'
+
+    if (!isLink && !closestLink) {
+      return
+    };
+
+    event.preventDefault()
+
+    function getHref() {
+      if (isLink) {
+        return target.getAttribute('href')
+      } else if (closestLink) {
+        return closestLink.getAttribute('href')
+      }
+    }
+
+    renderPage(getHref())
+  });
+
 (function initModules() {
   Handlebars.registerPartial('field', fieldModule)
   Handlebars.registerPartial('button', buttonModule)

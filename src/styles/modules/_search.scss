@@ -1,0 +1,15 @@
+@use "../variables";
+
+.search {
+  background: variables.$gray;
+  color: variables.$black;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 32px;
+  text-align: center;
+
+  &::placeholder {
+    color: variables.$dark-gray;
+  }
+}

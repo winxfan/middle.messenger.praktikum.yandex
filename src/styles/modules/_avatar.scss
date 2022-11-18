@@ -1,0 +1,16 @@
+@use "../variables";
+@use "../mixins";
+
+.avatar {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 1000px;
+  background: variables.$gray;
+  color: variables.$dark-gray;
+
+  &--placeholder {
+    width: 30%;
+    @include mixins.absolute-center
+  }
+}

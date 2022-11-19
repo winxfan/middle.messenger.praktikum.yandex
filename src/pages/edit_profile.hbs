@@ -1,0 +1,19 @@
+<div class="profile">
+    {{>returnBack }}
+
+    <div class="profile--content">
+        {{>avatarModule name="avatar" class="profile--avatar"}}
+        <h1 class="profile--name">Иван</h1>
+
+        <ul class="profile--list">
+            <li>{{>profileInfoEdit title="Почта" value="pochta@yandex.ru" name="email" edit="true" }}</li>
+            <li>{{>profileInfoEdit title="Логин" value="ivanivanov" name="login" edit="true" }}</li>
+            <li>{{>profileInfoEdit title="Имя" value="Иван" name="first_name" edit="true" }}</li>
+            <li>{{>profileInfoEdit title="Фамилия" value="Иванов" name="second_name" edit="true" }}</li>
+            <li>{{>profileInfoEdit title="Имя в чате" value="Иван" name="display_name" edit="true" }}</li>
+            <li>{{>profileInfoEdit title="Телефон" value="+7(909)9673030" name="phone" edit="true" }}</li>
+        </ul>
+
+        {{>button title="Сохранить данные" class="margin-0-auto"}}
+    </div>
+</div>

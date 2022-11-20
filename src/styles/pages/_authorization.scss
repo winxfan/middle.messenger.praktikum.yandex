@@ -1,0 +1,38 @@
+@use "../variables";
+@use "../mixins";
+
+.authorization {
+  padding: 50px 30px 30px;
+  background: variables.$white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+  max-width: 375px;
+  min-height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 1fr minmax(75px, 100px);
+  gap: 10px;
+  @include mixins.absolute-center;
+
+  .authorization--title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: variables.$black;
+  }
+
+  .authorization--form, .authorization--control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .authorization--form {
+    gap: 16px;
+  }
+
+  .authorization--control {
+    padding-top: 25px;
+    gap: 2px;
+  }
+}

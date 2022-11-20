@@ -1,0 +1,15 @@
+<div class="chat">
+    <div class="chat--aside">
+        <div class="chat--control">
+            {{>arrowLink title="Профиль" href='profile' class="chat--arrow-link"}}
+            {{>searchModule class="chat--search w-100"}}
+        </div>
+
+        <div class="chat-list">
+            {{>chatListItem name="Андрей" text="Изображение" time="10:49" count="2"}}
+            {{>chatListItem name="Киноклуб" text="Вы: стикер" time="12:00"}}
+        </div>
+    </div>
+
+    {{>chatArea}}
+</div>

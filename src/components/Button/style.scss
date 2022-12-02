@@ -1,0 +1,24 @@
+@use "../../styles/variables";
+
+.button {
+  display: block;
+  background-color: variables.$blue;
+  color: variables.$white;
+  border: 1px currentColor solid;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color, color 0.15s;
+  text-align: center;
+  font-size: 1em;
+
+  &:hover {
+    background: variables.$white;
+    color: variables.$blue;
+  }
+
+  &.white {
+    background-color: variables.$white;
+    color: variables.$blue;
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es2016",
+    "declaration": false,
+    "module": "commonjs",
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "sourceMap": true,
+    "strictNullChecks": true
+  },
+
+  "ts-node": {
+    "files": true
+  },
+//  "compilerOptions": {
+//    "target": "es2016",
+//    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+//
+//    "strict": true,
+//    "skipLibCheck": true,
+//    "lib": [
+//      "ESNext",
+//      "DOM"
+//    ]
+//  }
+}

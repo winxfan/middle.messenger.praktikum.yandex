@@ -1,0 +1,17 @@
+<div class="profile">
+    {{{ReturnBack}}}
+
+    <div class="profile--content">
+        {{{Avatar}}}
+
+        <h1 class="profile--name">{{name}}</h1>
+
+        <ul class="profile--list">
+            {{#each ProfileInfoEditArray}}
+                <li>{{{this}}}</li>
+            {{/each}}
+        </ul>
+
+        {{{ Button }}}
+    </div>
+</div>

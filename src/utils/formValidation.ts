@@ -20,10 +20,8 @@ const formValidation = (element: HTMLInputElement | null) => {
 
   if (!isValid) {
     hint?.classList.add('active')
-    return false
   } else {
     hint?.classList.remove('active')
-    return true
   }
 }
 

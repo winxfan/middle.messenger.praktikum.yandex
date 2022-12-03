@@ -1,5 +1,4 @@
 import { EventBus } from './EventBus';
-// @ts-ignore
 import { nanoid } from 'nanoid';
 
 class Block<P extends Record<string, any> = any> {
@@ -53,6 +52,18 @@ class Block<P extends Record<string, any> = any> {
 
     Object.keys(events).forEach(eventName => {
       this._element?.addEventListener(eventName, events[eventName]);
+    });
+  }
+
+  _removeEvents() {
+    const { events = {} } = this.props as P & { events: Record<string, () => void> };
+
+    if (!events || !this._element) {
+      return;
+    }
+
+    Object.entries(events).forEach(([event, listener]) => {
+      this._element?.removeEventListener(event, listener);
     });
   }
 
@@ -121,6 +132,8 @@ class Block<P extends Record<string, any> = any> {
     const newElement = fragment.firstElementChild as HTMLElement;
 
     if (this._element && newElement) {
+      this._removeEvents()
+
       this._element.replaceWith(newElement);
     }
 

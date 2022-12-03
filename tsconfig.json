@@ -4,19 +4,17 @@
     "target": "es2016",
     "declaration": false,
     "module": "commonjs",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "node",
     "lib": ["ESNext", "DOM", "DOM.Iterable"],
-
     "noImplicitAny": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "sourceMap": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
-
   "ts-node": {
     "files": true
   },
-  "esModuleInterop": true,
-  "forceConsistentCasingInFileNames": true,
 }

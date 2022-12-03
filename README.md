@@ -18,4 +18,4 @@
 4. `npm run start` для запуска сборки приложения
 
 Ссылка на макет [figma](https://www.figma.com/file/MMs6GLvSAOqx6bDwl6s5tK/Untitled?node-id=0%3A1&t=9qdOqHCEd3MQTOK3-0 "figma")
-Ссылка на [сайт](https://resilient-empanada-a51c27.netlify.app "netlify")
+Ссылка на [сайт](https://guileless-toffee-97539f.netlify.app/ "netlify")

@@ -15,7 +15,7 @@
     "strict": true,
     "skipLibCheck": true,
     "lib": [
-      "ESNext", "es5", "es6", "dom", "dom.iterable"
+      "ESNext", "es5", "es6", "dom", "DOM.iterable"
     ]
   },
 

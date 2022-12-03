@@ -4,6 +4,7 @@
 .error-template {
   color: variables.$black;
   text-align: center;
+
   @include mixins.absolute-center;
 
   .error-template--title {

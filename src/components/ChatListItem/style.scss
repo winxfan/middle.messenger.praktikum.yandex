@@ -27,8 +27,6 @@
     height: 45px;
   }
 
-  &--content {}
-
   &--name {
     font-weight: 600;
     color: variables.$black;
@@ -42,8 +40,6 @@
     font-size: 13px;
     color: variables.$dark-gray;
   }
-
-  &--info {}
 
   &--time {
     font-weight: 500;
@@ -65,5 +61,4 @@
     margin-left: auto;
     margin-top: 5px;
   }
-
 }

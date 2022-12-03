@@ -4,7 +4,7 @@
 .authorization {
   padding: 50px 30px 30px;
   background: variables.$white;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 0 6px rgb(0 0 0 / 14%);
   border-radius: 12px;
   max-width: 375px;
   min-height: 450px;
@@ -31,7 +31,8 @@
       gap: 16px;
     }
 
-    .form--content, .form--control {
+    .form--content,
+    .form--control {
       display: flex;
       flex-direction: column;
     }

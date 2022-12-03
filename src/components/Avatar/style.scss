@@ -14,11 +14,11 @@
 
   &:hover {
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
-      background: rgba(variables.$dark-gray, .85);
+      background: rgb(variables.$dark-gray 0.85);
     }
 
     .avatar--hint {
@@ -28,7 +28,8 @@
 
   .avatar--placeholder {
     width: 30%;
-    @include mixins.absolute-center
+
+    @include mixins.absolute-center;
   }
 
   .avatar--hint {
@@ -38,8 +39,9 @@
     color: variables.$white;
     z-index: 10;
     opacity: 0;
-    transition: opacity .15s;
-    @include mixins.absolute-center
+    transition: opacity 0.15s;
+
+    @include mixins.absolute-center;
   }
 
   .avatar--input {

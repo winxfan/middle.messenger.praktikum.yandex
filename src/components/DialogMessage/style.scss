@@ -1,0 +1,28 @@
+@use "../../styles/variables";
+
+.dialog-message {
+  position: relative;
+  background: variables.$light-gray;
+  padding: 12px;
+  border-radius: 0 5px 5px;
+  width: fit-content;
+  min-width: 125px;
+  max-width: 500px;
+
+  &[data-from="me"] {
+    background: variables.$light-blue;
+    border-radius: 5px 0 5px 5px;
+    margin-left: auto;
+    color: variables.$blue;
+  }
+
+  .dialog-message--text {
+    font-size: 1em;
+  }
+
+  .dialog-message--time {
+    font-size: 0.75em;
+    color: variables.$dark-gray;
+    text-align: right;
+  }
+}

@@ -8,39 +8,13 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
-input, button {
+input,
+button {
   border: 0;
   outline: 0;
-}
-
-.error-template {
-  color: variables.$black;
-  text-align: center;
-  @include mixins.absolute-center;
-
-  .error-template--title {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1;
-  }
-
-  .error-template--description {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1;
-    display: block;
-    margin-top: 20px;
-  }
-
-  .error-template--link {
-    display: block;
-    margin-top: 70px;
-    font-weight: 500;
-    font-size: 12px;
-  }
 }
 
 .w-100 {

@@ -1,0 +1,33 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .profile-info--title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    color: variables.$black;
+  }
+
+  .profile-info--content {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+    color: variables.$dark-gray;
+  }
+
+  .profile-info--input {
+    border: 1px solid variables.$dark-gray;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 100px;
+
+    &:focus {
+      border-color: variables.$blue;
+    }
+  }
+}

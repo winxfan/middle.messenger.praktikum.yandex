@@ -1,0 +1,25 @@
+@use "../../styles/variables";
+
+.chat {
+  display: grid;
+  grid-template-columns: minmax(310px, 25%) 1fr;
+  height: 100vh;
+
+  .chat--aside {
+    background: variables.$light-gray;
+    padding: 20px 10px;
+    height: 100%;
+  }
+
+  .chat--control {
+    padding-bottom: 14px;
+  }
+
+  .chat--arrow-link {
+    justify-content: end;
+  }
+
+  .chat--search {
+    margin-top: 23px;
+  }
+}

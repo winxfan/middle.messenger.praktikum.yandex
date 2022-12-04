@@ -1,0 +1,20 @@
+<div class="chat">
+    <div class="chat--aside">
+        <div class="chat--control">
+            {{{ArrowLink}}}
+            {{{Search}}}
+        </div>
+
+        <div class="chat-list">
+            {{#each ChatListItemsArray}}
+                {{{this}}}
+            {{/each}}
+        </div>
+    </div>
+
+    {{#if chatSelected}}
+        {{{Dialog}}}
+    {{else}}
+        {{{ChatArea}}}
+    {{/if}}
+</div>

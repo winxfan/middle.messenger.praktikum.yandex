@@ -1,0 +1,45 @@
+@use "../../styles/variables";
+@use "../../styles/mixins";
+
+.authorization {
+  padding: 50px 30px 30px;
+  background: variables.$white;
+  box-shadow: 0 0 6px rgb(0 0 0 / 14%);
+  border-radius: 12px;
+  max-width: 375px;
+  min-height: 450px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  margin: 40px auto;
+
+  .authorization--title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    color: variables.$black;
+  }
+
+  .form {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr minmax(75px, 150px);
+    gap: 10px;
+
+    .form--content {
+      gap: 16px;
+    }
+
+    .form--content,
+    .form--control {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form--control {
+      padding-top: 25px;
+      gap: 2px;
+    }
+  }
+}
